@@ -2,7 +2,7 @@
 
 ## Titres officiels
 
-- GitHub: *GEDI-supervised multisource canopy-height mapping across three contrasting Moroccan forest landscapes: evaluating aggregate accuracy and height-dependent structural fidelity*
+- GitHub: *Multisource canopy-height mapping across three contrasting Moroccan forest landscapes: aggregate error versus height-dependent performance under GEDI supervision*
 - Zenodo: *Derived data, trained models, and canopy-height maps for GEDI-Sentinel canopy-height mapping in Morocco*
 
 ## GitHub
