@@ -1,0 +1,21 @@
+{
+  "audit": "Ifran B0-B5 validation-only input-configuration screening",
+  "selection_partition": "VAL only",
+  "test_used_for_selection": false,
+  "common_val_support_n": 7833,
+  "seed": 42,
+  "training_contract": {
+    "loss": "Huber",
+    "huber_delta_m": 3.0,
+    "dropout": 0.15,
+    "batch_size": 8,
+    "optimizer": "AdamW",
+    "learning_rate": 0.0001,
+    "weight_decay": 0.005,
+    "gradient_clip": 1.0,
+    "sampler": "balanced_height",
+    "checkpoint": "best.ckpt"
+  },
+  "selected_configuration": "B4",
+  "selection_note": "Joint validation inspection; B4 gave the slope closest to unity and the strongest upper-range recovery among B2-B5, while absolute error and spread diagnostics were also inspected."
+}

@@ -1,0 +1,52 @@
+{
+  "selection_partition": "spatial validation only",
+  "test_used_for_selection": false,
+  "archive_url": "TO_BE_ADDED",
+  "models": {
+    "ifran_phase1": {
+      "sha256": "072a8735973e3511564cf3ef7907f5b33105df08895c78917fb817de6198afb1",
+      "size_bytes": 377342616,
+      "filename": "ifran_phase1.ckpt",
+      "huber_delta_m": 3.0
+    },
+    "maamoura_phase1": {
+      "sha256": "d83a5493715451a61c997a66a25f361080a56e7ceade60eb886f2ae76f6bd7f4",
+      "size_bytes": 377139548,
+      "filename": "maamoura_phase1.ckpt",
+      "huber_delta_m": 1.0
+    },
+    "agadir_phase1": {
+      "sha256": "f72f06e33455852cbc94cd00ecb81e192f68e7f67b89de007fef4a610fa25b2e",
+      "size_bytes": 377139352,
+      "filename": "agadir_phase1.ckpt",
+      "huber_delta_m": 3.0
+    },
+    "ifran_phase2": {
+      "sha256": "41881083d90a9aeac8b8c4aa08e35d0142d94abc2b546737dead0af7c0982ffd",
+      "size_bytes": 2677338,
+      "filename": "ifran_phase2_best_compromise.ckpt",
+      "lambda_temp": 0.0,
+      "D_m": 5.0,
+      "K": 2,
+      "huber_delta_m": 3.0
+    },
+    "maamoura_phase2": {
+      "sha256": "4d406f9edc55b3bda33a8c42f62d05518e816b9180de8a3abd93e71d52167bbd",
+      "size_bytes": 2677402,
+      "filename": "maamoura_phase2_best_compromise.ckpt",
+      "lambda_temp": 0.0,
+      "D_m": 2.0,
+      "K": 2,
+      "huber_delta_m": 3.0
+    },
+    "agadir_phase2": {
+      "sha256": "6addc2c4d752b80f69211ad498a230b86e7b45b16d20c9c51986208139283b8a",
+      "size_bytes": 2677338,
+      "filename": "agadir_phase2_best_compromise.ckpt",
+      "lambda_temp": 0.0,
+      "D_m": 3.0,
+      "K": 3,
+      "huber_delta_m": 3.0
+    }
+  }
+}

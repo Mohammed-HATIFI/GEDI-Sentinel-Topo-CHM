@@ -1,0 +1,13 @@
+project_root: /absolute/path/to/GEDI-Sentinel-CHM
+data_archive_root: /absolute/path/to/gedi-sentinel-chm-data
+raw:
+  gedi: /absolute/path/to/GEDI
+  sentinel1: /absolute/path/to/Sentinel-1
+  sentinel2: /absolute/path/to/Sentinel-2
+  dem: /absolute/path/to/SRTM
+derived:
+  catalogs: /absolute/path/to/catalogs
+  checkpoints: /absolute/path/to/checkpoints
+  annual_maps: /absolute/path/to/annual_maps
+  external_chm: /absolute/path/to/external_chm
+results_root: /absolute/path/to/results

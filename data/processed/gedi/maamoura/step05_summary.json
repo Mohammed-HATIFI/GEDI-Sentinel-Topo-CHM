@@ -1,0 +1,54 @@
+{
+  "dataset_root": "<LOCAL_PATH_REDACTED>",
+  "storage_format": "npy_catalog_v1",
+  "samples_by_split": {
+    "train": 181,
+    "val": 36,
+    "test": 24
+  },
+  "shots_by_split": {
+    "train": 26126,
+    "test": 6715,
+    "val": 5275
+  },
+  "unique_shots_by_split": {
+    "test": 1870,
+    "train": 5938,
+    "val": 1328
+  },
+  "patch_bins_by_split": {
+    "test": {
+      "[10,15)": 15,
+      "[2.5,5)": 0,
+      "[5,8)": 9,
+      "[8,10)": 0
+    },
+    "train": {
+      "[10,15)": 146,
+      "[2.5,5)": 2,
+      "[5,8)": 9,
+      "[8,10)": 24
+    },
+    "val": {
+      "[10,15)": 30,
+      "[2.5,5)": 0,
+      "[5,8)": 0,
+      "[8,10)": 6
+    }
+  },
+  "train_occurrences": 26126,
+  "train_unique_shots": 5938,
+  "mean_occurrences_per_train_shot": 4.399797911754799,
+  "leakage_audit": {
+    "patch_key_cross_split_leaks": 0,
+    "sample_key_cross_split_leaks": 0,
+    "spatial_group_cross_split_leaks": 0,
+    "gedi_shot_cross_split_leaks": 0
+  },
+  "outputs": {
+    "sample_catalog": "<LOCAL_PATH_REDACTED>",
+    "shot_catalog": "<LOCAL_PATH_REDACTED>",
+    "experiment_json": "<LOCAL_PATH_REDACTED>",
+    "lds_table": "<LOCAL_PATH_REDACTED>"
+  }
+}

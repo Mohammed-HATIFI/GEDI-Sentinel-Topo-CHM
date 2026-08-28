@@ -1,0 +1,4 @@
+forest,ecosystem,evaluation_domain_m,canonical_test_n,footprint_diameter_m,minimum_valid_coverage,all_product_common_n_for_boxplot,Our B4 Phase 2_valid_n,Lang 2020_valid_n,Pauls 2020_valid_n,Meta/Tolan 2023_valid_n,GFCH 2019_valid_n
+Ifran,dense forest,2–45,5076,25.0,0.8,2382,5072,5057,5076,5076,2384.0
+Maamoura,low-sparsity forest,2–20,1799,25.0,0.8,641,1798,1796,1797,1797,641.0
+Agadir,sparse forest,2–20,9206,25.0,0.8,6401,6409,9192,9195,9196,

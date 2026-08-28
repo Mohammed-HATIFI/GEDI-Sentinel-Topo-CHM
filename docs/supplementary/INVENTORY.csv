@@ -1,0 +1,29 @@
+category,item,status,source
+Data preparation,Detailed preprocessing workflow,included,Reflexion/figures_tex/01_preprocessing_workflow.tex
+Data preparation,Full GEDI filtering record,included,Reflexion/supplementary/archive/pre_condensation_20260822/supp_01_gedi_filtering.tex
+Input screening,Full B0-B5 configuration record,included,Reflexion/supplementary/archive/pre_condensation_20260822/supp_02_input_configurations.tex
+Architecture,Phase 1 Attention U-Net and checkpoint selection,included,Reflexion/supplementary/supp_03_training_and_architecture.tex
+External products,Product provenance and harmonisation,included,Reflexion/supplementary/supp_04_external_product_provenance.tex
+Benchmark,Strict-common scatter matrix,included,Images/Results/Cross_Ecosystem/three_forests_strict_common_scatter.pdf
+Benchmark,Aggregate MSE decomposition,included,Images/Results/MSE_Decomposition/MSE_decomposition_three_forests_strict_common_LATEX_CLEAN.pdf
+Benchmark,Signed-error distributions by height class,included,Images/Results/CHM_Benchmark/*_binned_error.pdf
+Benchmark,Four-product class-wise MAE figure,included,Kimi/Reproducibility/Classwise_MAE_Visualizations/outputs/classwise_mae_recommended_q1.pdf
+Benchmark,Four-product class-wise MAE numerical table,included,Reflexion/sections/03_results.tex
+Benchmark,Qualitative canopy-height maps,included,Images/Results/Cross_Ecosystem/three_forests_qualitative_maps.pdf
+Phase 2,Workflow diagram,included,Reflexion/figures_tex/03_phase2_workflow.tex
+Phase 2,Collision and clipping checks,included,Reflexion/supplementary/supp_archive_phase2_technical.tex
+Phase 2,Temporal-weight and design controls,included,Reflexion/supplementary/archive/pre_condensation_20260822/supp_05_phase2_controlled_experiments.tex
+Robustness,Patch-level spatial replication,included,Reflexion/supplementary/archive/pre_condensation_20260822/supp_06_patch_replication.tex
+Robustness,Footprint-support sensitivity,included,Reflexion/supplementary/archive/pre_condensation_20260822/supp_07_footprint_sensitivity.tex
+Robustness,Matched multi-seed Phase 1-Phase 2 audits,included,Reflexion/supplementary/archive/pre_condensation_20260822/supp_08_multiseed_phase1.tex
+Diagnostics,Final-model height distributions and scatter plots,included,Images/Results/Phase2_Diagnostics/*.pdf
+Input screening,Historical B0-B5 MSE Taylor and KGE suite,included,Images/Scenario_Best_Model/01_*.pdf;02_*.pdf;03_*.pdf;07_*.pdf
+Input screening,VAL-only B0-B5 MSE and calibration,included,Images/Scenario_Best_Model/08_*.pdf;09_*.pdf
+Input screening,VAL metric CSVs and protocol manifest,included,Reproducibility/B0_B5_VAL_Audit
+Uncertainty,Post-hoc conformal and mapped uncertainty diagnostics,included,Images/Results/Uncertainty/*.pdf
+Empty shell,Patch QC placeholder,indexed_not_rendered,Reflexion/supplementary/supp_02_patch_qc.tex
+Empty shell,Split diagnostics placeholder,indexed_not_rendered,Reflexion/supplementary/supp_03_split_diagnostics.tex
+Empty shell,Additional plots placeholder,indexed_not_rendered,Reflexion/supplementary/supp_04_additional_plots.tex
+Empty shell,Threshold sensitivity placeholder,indexed_not_rendered,Reflexion/supplementary/supp_05_threshold_sensitivity.tex
+Empty shell,Generic ablation details placeholder,indexed_not_rendered,Reflexion/supplementary/supp_06_ablation_details.tex
+Duplicates,Compiler auxiliaries backups and byte-identical format variants,excluded_duplicate,project-wide audit

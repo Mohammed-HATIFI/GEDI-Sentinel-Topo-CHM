@@ -1,0 +1,33 @@
+{
+  "selection_partition": "spatial validation only",
+  "test_used_for_selection": false,
+  "decision_rule_status": "validation-based multi-metric comparison; residual-only retained for production at all sites",
+  "recommendations": {
+    "Ifran": "Phase 2 residual only (lambda=0)",
+    "Maamoura": "Phase 2 residual only (lambda=0)",
+    "Agadir": "Phase 2 residual only (lambda=0)"
+  },
+  "inputs": {
+    "stage_accuracy": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Results\\Final_Article_Harmonized_GEDIAnchored_NaturalP1\\Temporal_Diagnostics_VAL\\phase1_phase2_gedi_calibration_val.csv",
+    "stage_temporal": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Results\\Final_Article_Harmonized_GEDIAnchored_NaturalP1\\Temporal_Diagnostics_VAL\\phase1_phase2_temporal_summary_val.csv",
+    "stage_deltas": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Results\\Final_Article_Harmonized_GEDIAnchored_NaturalP1\\Temporal_Diagnostics_VAL\\phase2_minus_phase1_temporal_deltas_val.csv",
+    "controlled_accuracy": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\tables\\03_paired_VAL_accuracy_metrics.csv",
+    "controlled_temporal": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\tables\\04_paired_VAL_temporal_metrics.csv",
+    "controlled_deltas": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\tables\\05_lambda_temporal_controlled_deltas.csv",
+    "paired_ifran": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\tables\\02_ifran_paired_val_predictions.csv.gz",
+    "zero_raw_ifran": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\ifran_zero_val_unique_nearest.csv.gz",
+    "positive_raw_ifran": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\ifran_positive_val_unique_nearest.csv.gz",
+    "zero_lineage_ifran": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\ifran_zero_val_unique_nearest.lineage.json",
+    "positive_lineage_ifran": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\ifran_positive_val_unique_nearest.lineage.json",
+    "paired_maamoura": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\tables\\02_maamoura_paired_val_predictions.csv.gz",
+    "zero_raw_maamoura": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\maamoura_zero_val_unique_nearest.csv.gz",
+    "positive_raw_maamoura": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\maamoura_positive_val_unique_nearest.csv.gz",
+    "zero_lineage_maamoura": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\maamoura_zero_val_unique_nearest.lineage.json",
+    "positive_lineage_maamoura": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\maamoura_positive_val_unique_nearest.lineage.json",
+    "paired_agadir": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\tables\\02_agadir_paired_val_predictions.csv.gz",
+    "zero_raw_agadir": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\agadir_zero_val_unique_nearest.csv.gz",
+    "positive_raw_agadir": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\agadir_positive_val_unique_nearest.csv.gz",
+    "zero_lineage_agadir": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\agadir_zero_val_unique_nearest.lineage.json",
+    "positive_lineage_agadir": "C:\\Users\\Dell\\Desktop\\Publication_Clarck\\Natural_Sampling\\Ablations\\Phase2_LambdaTemporal_Controlled\\results\\cache\\agadir_positive_val_unique_nearest.lineage.json"
+  }
+}

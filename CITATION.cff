@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article and this code release."
+title: "GEDI-supervised multisource canopy-height mapping across three contrasting Moroccan forest landscapes: evaluating aggregate accuracy and height-dependent structural fidelity"
+type: software
+authors:
+  - family-names: Hatifi
+    given-names: Mohammed
+repository-code: "https://github.com/WiseManShady/GEDI-Sentinel-CHM"
+license: MIT
+version: 1.0.0
+date-released: 2026-08-23
+preferred-citation:
+  type: article
+  title: "GEDI-supervised multisource canopy-height mapping across three contrasting Moroccan forest landscapes: evaluating aggregate accuracy and height-dependent structural fidelity"
+  authors:
+    - family-names: Hatifi
+      given-names: Mohammed
+  year: 2026

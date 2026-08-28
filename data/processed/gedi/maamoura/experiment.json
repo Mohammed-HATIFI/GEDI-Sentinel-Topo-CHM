@@ -1,0 +1,83 @@
+{
+  "storage_format": "npy_catalog_v1",
+  "experiment_root": "<LOCAL_PATH_REDACTED>",
+  "sample_catalog": "<LOCAL_PATH_REDACTED>",
+  "shot_catalog": "<LOCAL_PATH_REDACTED>",
+  "channel_order": [
+    "S2_LEAFON_B02",
+    "S2_LEAFON_B03",
+    "S2_LEAFON_B04",
+    "S2_LEAFON_B08",
+    "S2_LEAFON_B05",
+    "S2_LEAFON_B06",
+    "S2_LEAFON_B07",
+    "S2_LEAFON_B8A",
+    "S1_ASC_VV",
+    "S1_ASC_VH",
+    "S1_DESC_VV",
+    "S1_DESC_VH",
+    "AOI_MASK",
+    "DEM",
+    "SLOPE"
+  ],
+  "schema": {
+    "in_channels": 15,
+    "patch_size": 512,
+    "stride": 512,
+    "temporal_window_days": 180,
+    "max_height_m": 20.0,
+    "max_aux_k": 2048,
+    "n_channels": 15,
+    "channel_order": [
+      "S2_LEAFON_B02",
+      "S2_LEAFON_B03",
+      "S2_LEAFON_B04",
+      "S2_LEAFON_B08",
+      "S2_LEAFON_B05",
+      "S2_LEAFON_B06",
+      "S2_LEAFON_B07",
+      "S2_LEAFON_B8A",
+      "S1_ASC_VV",
+      "S1_ASC_VH",
+      "S1_DESC_VV",
+      "S1_DESC_VH",
+      "AOI_MASK",
+      "DEM",
+      "SLOPE"
+    ]
+  },
+  "ablation_contract": {
+    "A": "balanced patch sampler only",
+    "B": "A plus train-only inverse GEDI occurrence weighting",
+    "C": "B plus train-only LDS/KDE continuous height weighting",
+    "patch_stat": "p90",
+    "patch_bins": [
+      0.0,
+      2.5,
+      5.0,
+      8.0,
+      10.0,
+      15.0,
+      20.0
+    ]
+  },
+  "train_only_statistics": {
+    "shot_occurrence_counts": "train_shot_occurrence_counts.csv.gz",
+    "lds_table": "lds_table_train_only.json"
+  },
+  "leakage_audit": {
+    "patch_key_cross_split_leaks": 0,
+    "sample_key_cross_split_leaks": 0,
+    "spatial_group_cross_split_leaks": 0,
+    "gedi_shot_cross_split_leaks": 0
+  },
+  "validation_domain_m": [
+    2.0,
+    20.0
+  ],
+  "test_domain_m": [
+    0.0,
+    20.0
+  ],
+  "fixed_spatial_split_parent": "<LOCAL_PATH_REDACTED>"
+}

@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Data and models (too large for git)
+*.tif
+*.tiff
+*.hdf5
+*.h5
+*.nc
+*.zarr/
+models/**/*.pt
+models/**/*.pth
+models/**/*.ckpt
+data/**/*.zip
+data/**/*.tar.gz
+*.geojson
+!data/geospatial/
+!data/geospatial/*.geojson
+*.shp
+*.shx
+*.dbf
+*.prj
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+!notebooks/
+!notebooks/official/
+!notebooks/official/*.ipynb
+!notebooks/audits/
+!notebooks/audits/Maamoura_Phase2_Delta_Parent_Factorial.ipynb
+!notebooks/audits/GEDI_STEP05_Catalog_Audit.ipynb
+
+# Logs and outputs
+*.log
+*.out
+*.err
+runs/
+outputs/
+results/*
+!results/README.md
+!results/metrics/
+!results/metrics/**
+!results/provenance/
+!results/provenance/**
+checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary
+*.tmp
+*.temp
+.cache/
+# Local path configuration and large release artifacts
+configs/paths.local.yaml
+data/raw/
+data/derived/
+models/checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.tif
+*.tiff
+*.npy
+*.npz
+*.parquet
+*.h5
+*.hdf5
+__pycache__/
+.pytest_cache/
+*.egg-info/

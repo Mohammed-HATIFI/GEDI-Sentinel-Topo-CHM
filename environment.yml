@@ -1,0 +1,22 @@
+name: gedi-sentinel-chm
+channels: [pytorch, conda-forge]
+dependencies:
+  - python=3.10
+  - pip
+  - gdal
+  - rasterio=1.4
+  - geopandas=1.0
+  - pyproj=3.7
+  - numpy=1.26
+  - pandas=2.2
+  - scipy=1.14
+  - scikit-learn=1.5
+  - matplotlib=3.9
+  - pyyaml=6.0
+  - tqdm=4.66
+  - jupyterlab=4.2
+  - pytest=8.3
+  - pytorch=2.4
+  - torchvision=0.19
+  - pip:
+      - nbconvert==7.16.4

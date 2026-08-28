@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "test_support_n": 1799,
+  "test_support_identical_across_variants": true,
+  "test_used_for_checkpoint_selection": false,
+  "interpretation": "The factorial is a lineage/interaction audit. It must not be used to replace the pre-designated production checkpoint after examining TEST results.",
+  "important_limitation": "The reused delta=3 checkpoints and newly trained delta=1 checkpoints were selected in their original runs; their registry contains different VAL counts for one reused run (3615 versus 3430). TEST support is nevertheless identical."
+}

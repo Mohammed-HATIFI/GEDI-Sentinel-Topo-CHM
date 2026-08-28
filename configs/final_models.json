@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "selection_partition": "spatial validation only",
+  "test_used_for_selection": false,
+  "seed": 42,
+  "source_patch_shape": [
+    512,
+    512,
+    15
+  ],
+  "phase2_training_crop_shape": [
+    4,
+    15,
+    96,
+    96
+  ],
+  "models": {
+    "ifran": {
+      "phase2_product": "residual_only",
+      "lambda_temp": 0.0,
+      "drop_threshold_m": 5.0,
+      "persistence_years": 2,
+      "huber_delta_m": 3.0,
+      "checkpoint_file": "ifran_phase2_best_compromise.ckpt",
+      "checkpoint_sha256": "41881083d90a9aeac8b8c4aa08e35d0142d94abc2b546737dead0af7c0982ffd"
+    },
+    "maamoura": {
+      "phase2_product": "residual_only",
+      "lambda_temp": 0.0,
+      "drop_threshold_m": 2.0,
+      "persistence_years": 2,
+      "huber_delta_m": 3.0,
+      "checkpoint_file": "maamoura_phase2_best_compromise.ckpt",
+      "checkpoint_sha256": "4d406f9edc55b3bda33a8c42f62d05518e816b9180de8a3abd93e71d52167bbd"
+    },
+    "agadir": {
+      "phase2_product": "residual_only",
+      "lambda_temp": 0.0,
+      "drop_threshold_m": 3.0,
+      "persistence_years": 3,
+      "huber_delta_m": 3.0,
+      "checkpoint_file": "agadir_phase2_best_compromise.ckpt",
+      "checkpoint_sha256": "6addc2c4d752b80f69211ad498a230b86e7b45b16d20c9c51986208139283b8a"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "selection_partition": "spatial validation only",
+  "test_used_for_selection": false,
+  "seed": 42,
+  "source_patch_shape": [512, 512, 15],
+  "channel_order": [
+    "S2_LEAFON_B02", "S2_LEAFON_B03", "S2_LEAFON_B04", "S2_LEAFON_B08",
+    "S2_LEAFON_B05", "S2_LEAFON_B06", "S2_LEAFON_B07", "S2_LEAFON_B8A",
+    "S1_ASC_VV", "S1_ASC_VH", "S1_DESC_VV", "S1_DESC_VH",
+    "AOI_MASK", "DEM", "SLOPE"
+  ],
+  "models": {
+    "ifran": {
+      "checkpoint_sha256": "072a8735973e3511564cf3ef7907f5b33105df08895c78917fb817de6198afb1",
+      "checkpoint_filename": "ifran_phase1.ckpt",
+      "loss": "Huber",
+      "huber_delta_m": 3.0,
+      "evaluation_range_m": [2.0, 45.0]
+    },
+    "maamoura": {
+      "checkpoint_sha256": "d83a5493715451a61c997a66a25f361080a56e7ceade60eb886f2ae76f6bd7f4",
+      "checkpoint_filename": "maamoura_phase1.ckpt",
+      "loss": "Huber",
+      "huber_delta_m": 1.0,
+      "evaluation_range_m": [2.0, 20.0]
+    },
+    "agadir": {
+      "checkpoint_sha256": "f72f06e33455852cbc94cd00ecb81e192f68e7f67b89de007fef4a610fa25b2e",
+      "checkpoint_filename": "agadir_phase1.ckpt",
+      "loss": "Huber",
+      "huber_delta_m": 3.0,
+      "evaluation_range_m": [2.0, 20.0]
+    }
+  }
+}
