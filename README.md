@@ -1,6 +1,6 @@
-# The lowest aggregate error can coexist with the strongest height-range compression: height-stratified evaluation of GEDI-supervised canopy-height maps across three Moroccan forest landscapes
+# Low aggregate error can conceal height-range compression: stratified evaluation of GEDI-supervised canopy maps across three Moroccan forest landscapes
 
-**Associated article:** *The lowest aggregate error can coexist with the strongest height-range compression: height-stratified evaluation of GEDI-supervised canopy-height maps across three Moroccan forest landscapes*
+**Associated article:** *Low aggregate error can conceal height-range compression: stratified evaluation of GEDI-supervised canopy maps across three Moroccan forest landscapes*
 
 **Associated Zenodo archive title:** *Derived data, trained models, and canopy-height maps for GEDI-Sentinel canopy-height mapping in Morocco*
 
