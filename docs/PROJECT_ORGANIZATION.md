@@ -2,9 +2,10 @@
 
 ## Production workflow
 
-The nine notebooks in `notebooks/official/` reproduce the frozen Phase 2
-evaluation, article figures, dense inference, external-product comparisons,
-height-class diagnostics, MSE decomposition, and residual-interval diagnostics.
+The nine numbered notebooks in `notebooks/official/` follow the manuscript
+workflow from the GEDI preprocessing audit through spatial modelling,
+multi-year refinement, held-out evaluation, dense inference, external-product
+comparisons, height-class diagnostics, and MSE decomposition.
 Their order is defined in `notebooks/official/README.md`.
 
 ## Model selection and authoritative results
@@ -20,10 +21,10 @@ Their order is defined in `notebooks/official/README.md`.
 ## Audits and ablations
 
 Controlled ablations and robustness notebooks are scientific supporting
-evidence, not production entry points. They must select configurations on VAL
-only. TEST outputs cannot be used for tuning. The paired Phase 1-to-Phase 2
-multi-seed experiment remains an open audit until all matched-seed Phase 2 runs
-are frozen and evaluated on the same TEST identifiers.
+evidence, not production entry points. The executed analyses retained for the
+manuscript are numbered in `notebooks/Supplementary/`. Configuration decisions
+must use VAL only; TEST outputs cannot be used for tuning. Incomplete,
+superseded, and purely exploratory notebooks are excluded from the release.
 
 ## Release levels
 

@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the associated article and this code release."
-title: "Multisource canopy-height mapping across three contrasting Moroccan forest landscapes: aggregate error versus height-dependent performance under GEDI supervision"
+title: "The lowest aggregate error can coexist with the strongest height-range compression: height-stratified evaluation of GEDI-supervised canopy-height maps across three Moroccan forest landscapes"
 type: software
 authors:
   - family-names: Hatifi
@@ -11,7 +11,7 @@ version: 1.0.0
 date-released: 2026-08-23
 preferred-citation:
   type: article
-  title: "Multisource canopy-height mapping across three contrasting Moroccan forest landscapes: aggregate error versus height-dependent performance under GEDI supervision"
+  title: "The lowest aggregate error can coexist with the strongest height-range compression: height-stratified evaluation of GEDI-supervised canopy-height maps across three Moroccan forest landscapes"
   authors:
     - family-names: Hatifi
       given-names: Mohammed

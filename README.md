@@ -1,10 +1,10 @@
-# Multisource canopy-height mapping across three contrasting Moroccan forest landscapes: aggregate error versus height-dependent performance under GEDI supervision
+# The lowest aggregate error can coexist with the strongest height-range compression: height-stratified evaluation of GEDI-supervised canopy-height maps across three Moroccan forest landscapes
 
-**GitHub repository title:** *Multisource canopy-height mapping across three contrasting Moroccan forest landscapes: aggregate error versus height-dependent performance under GEDI supervision*
+**Associated article:** *The lowest aggregate error can coexist with the strongest height-range compression: height-stratified evaluation of GEDI-supervised canopy-height maps across three Moroccan forest landscapes*
 
 **Associated Zenodo archive title:** *Derived data, trained models, and canopy-height maps for GEDI-Sentinel canopy-height mapping in Morocco*
 
-Research code and reproducibility material for a two-stage, locally trained canopy-height mapping framework evaluated in Ifran, Maamoura, and Agadir, Morocco.
+Research code and reproducibility material for a two-stage, locally trained canopy-height mapping architecture evaluated in Ifran, Maamoura, and Agadir, Morocco. The study contrasts aggregate accuracy with height-stratified and distribution-sensitive diagnostics.
 
 > **Release status.** The repository contains the source-code snapshot, final
 > quality-filtered GEDI catalogues, frozen spatial partitions, exact evaluation
@@ -21,15 +21,16 @@ Research code and reproducibility material for a two-stage, locally trained cano
 3. Train the Phase 1 Attention U-Net for annual spatial canopy-height retrieval from 512 x 512 source patches.
 4. Freeze Phase 1 and train/evaluate the Phase 2 four-year residual Conv3D head using 96 x 96 stochastic crops from complete four-year sequences.
 5. Select all configurations on the spatial validation partition only.
-6. Evaluate frozen products on held-out GEDI support, then generate annual maps and product-level comparisons.
+6. Evaluate frozen models on held-out GEDI support and generate annual canopy-height maps.
+7. Compare a fixed 2020 local map for each landscape with Pa24, L23, and T24 on identical GEDI footprints within that landscape.
 
 The final Phase 2 selection uses residual-only refinement in all three landscapes (`lambda_temp = 0`). See [`configs/final_models.json`](configs/final_models.json).
 
 ## Quick start
 
 ```bash
-git clone https://github.com/WiseManShady/GEDI-Sentinel-CHM.git
-cd GEDI-Sentinel-CHM
+git clone https://github.com/Mohammed-HATIFI/GEDI-Sentinel-Topo-CHM.git
+cd GEDI-Sentinel-Topo-CHM
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # Linux/macOS: source .venv/bin/activate
@@ -48,7 +49,8 @@ configs/                 final model registry and portable path template
 data/                    filtered GEDI data, evaluation supports, split layers, and manifest
 docs/                    pipeline, data, provenance, and reproduction guide
 models/                  checkpoint manifest (binaries live in the archive)
-notebooks/official/      output-stripped audit/reproduction notebooks
+notebooks/official/      numbered, output-stripped publication notebooks
+notebooks/Supplementary/ executed ablations and sensitivity notebooks
 results/metrics/         lightweight authoritative result tables
 scripts/                 release, manifest, and notebook utilities
 src/pipeline/            Phase 2, inference, catalogue, and audit snapshot
@@ -73,9 +75,24 @@ Detailed commands and expected artefacts are in [`docs/REPRODUCIBILITY.md`](docs
 The consolidated supplementary record is available as
 [`docs/supplementary/Complete_Supplementary_Archive.pdf`](docs/supplementary/Complete_Supplementary_Archive.pdf).
 Its inventory distinguishes included scientific analyses from empty historical
-stubs and byte-identical duplicates. Focused audit notebooks are stored in
-`notebooks/audits/`, while the main reproduction sequence remains in
+stubs and byte-identical duplicates. Executed ablation and sensitivity notebooks are stored in
+`notebooks/Supplementary/`, while the main reproduction sequence remains in
 `notebooks/official/`.
+
+## Fixed-2020 external-product benchmark
+
+The publication benchmark uses one fixed 2020 local canopy-height map per
+landscape for all retained GEDI observations. The local maps, Pa24, L23, and
+T24 are evaluated on exactly the same GEDI footprints within each landscape
+(`n = 5,052` for Ifran, `n = 1,796` for Maamoura, and `n = 5,600` for
+Agadir). P21 is retained for qualitative comparison only.
+
+The local maps have the lowest aggregate MAE and RMSE in all three landscapes.
+Height-balanced MAE changes the ranking in Maamoura and Agadir, where Pa24 has
+the lowest value. The Maamoura result is sensitive to the five observations in
+the 15--20 m class; the small Agadir margin remains after excluding its highest
+class. These results support the article's distinction between aggregate error
+and recovery across the observed height distribution.
 
 ## Data availability
 
@@ -99,7 +116,7 @@ The empty split JSON files in the initial scaffold were removed because they wer
 4. `models/manifest.json` and `data/manifest.csv` — external artefact identities.
 5. `docs/PROJECT_ORGANIZATION.md` — distinction between the production workflow, audits, ablations, and supplementary evidence.
 
-Historical scripts can retain execution-machine paths; those strings document provenance and are not portable defaults. New runs must use a local path configuration.
+Historical scripts can retain execution-machine paths; those strings document provenance and are not portable defaults. New runs must use a local path configuration. The numbered notebook sequence starts with the GEDI preprocessing/catalogue audit and is documented in `notebooks/official/README.md`.
 
 ## Citation, license, and limitations
 
@@ -108,5 +125,5 @@ Citation metadata are in [`CITATION.cff`](CITATION.cff). Code is MIT licensed. U
 - GitHub includes the processed GEDI registries, but not raw GEDI granules, raw
   imagery, tensor catalogues, checkpoints, or full annual CHMs.
 - The spatial split is geographically held out but height-distribution informed; it does not estimate transfer to an arbitrary height distribution.
-- External CHM comparisons are product-level comparisons, not controlled architecture comparisons.
+- External CHM comparisons use identical GEDI footprints and fixed product epochs, but remain product-level comparisons rather than controlled architecture comparisons.
 - Archive DOIs and measured compute requirements remain release gates and must not be guessed.

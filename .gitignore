@@ -45,9 +45,8 @@ data/**/*.tar.gz
 !notebooks/
 !notebooks/official/
 !notebooks/official/*.ipynb
-!notebooks/audits/
-!notebooks/audits/Maamoura_Phase2_Delta_Parent_Factorial.ipynb
-!notebooks/audits/GEDI_STEP05_Catalog_Audit.ipynb
+!notebooks/Supplementary/
+!notebooks/Supplementary/*.ipynb
 
 # Logs and outputs
 *.log

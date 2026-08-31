@@ -28,18 +28,15 @@ REQUIRED = [
 ]
 
 EXPECTED_NOTEBOOKS = {
-    "Phase_1.ipynb",
-    "Phase_2.ipynb",
-    "Graphs_Model_Phase_2.ipynb",
-    "Phase1_Phase2_Temporal_Coherence.ipynb",
-    "Inference.ipynb",
-    "Chm_Comparison.ipynb",
-    "MSE_Decomposition.ipynb",
-    "CHM_Height_Class_Comparison_Strict_Common.ipynb",
-    "CHM_Conformal_Uncertainty_Comparison.ipynb",
-    "Study_Area.ipynb",
-    "Generate_Figure2_Redesigned.ipynb",
-    "Inference_Forest_By_Forest.ipynb",
+    "01_GEDI_Preprocessing_and_Catalog_Audit.ipynb",
+    "02_Study_Areas_Spatial_Splits_and_GEDI_Support.ipynb",
+    "03_Phase1_Spatial_Canopy_Height_Model.ipynb",
+    "04_Phase2_MultiYear_Residual_Refinement.ipynb",
+    "05_Phase2_TEST_Diagnostics_and_Table2.ipynb",
+    "06_Annual_CHM_Inference_and_Qualitative_Maps.ipynb",
+    "07_External_CHM_Benchmark.ipynb",
+    "08_Height_Stratified_MAE_and_Table_D1.ipynb",
+    "09_MSE_Decomposition_Appendix_D.ipynb",
 }
 
 

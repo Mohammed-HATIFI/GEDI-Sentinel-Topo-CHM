@@ -43,4 +43,4 @@ hashes and redistribution status.
 
 ## GEDI QC provenance
 
-See `../docs/GEDI_FILTERING_PROVENANCE.md` and `../notebooks/audits/GEDI_STEP05_Catalog_Audit.ipynb`. The release reproduces training from the frozen post-QC catalogues; the original upstream raw-GEDI filtering notebook was not recovered.
+See `../docs/GEDI_FILTERING_PROVENANCE.md` and `../notebooks/official/01_GEDI_Preprocessing_and_Catalog_Audit.ipynb`. The release reproduces training from the frozen post-QC catalogues; the original upstream raw-GEDI filtering notebook was not recovered.

@@ -47,6 +47,6 @@ the release supports exact reproduction from the frozen filtered catalogues,
 not byte-for-byte regeneration from raw GEDI granules. This boundary is stated
 explicitly to avoid overstating provenance.
 
-`GEDI_STEP05_Catalog_Audit.ipynb` verifies the released catalogue counts,
+`01_GEDI_Preprocessing_and_Catalog_Audit.ipynb` verifies the released catalogue counts,
 split labels, unique-shot keys, RH95 ranges, and hashes without modifying the
 archived measurements.

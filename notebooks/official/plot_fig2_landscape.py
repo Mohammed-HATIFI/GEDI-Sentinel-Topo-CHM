@@ -14,7 +14,8 @@ methodological objection a locally trained model attracts.
 
 HOW TO RUN
 ----------
-Paste this file's contents into a NEW CELL AT THE END of Study_Area.ipynb,
+Paste this file's contents into a new cell at the end of
+02_Study_Areas_Spatial_Splits_and_GEDI_Support.ipynb,
 after Section 7 has run, so that the following names already exist:
 
     SITE_DATA, GEDI_DISTRIBUTIONS, SPLIT_STYLE, SPLIT_LABEL, SPLIT_COLORS,
@@ -42,7 +43,7 @@ _required = ["SITE_DATA", "GEDI_DISTRIBUTIONS", "SPLIT_LABEL", "OUT_DIR",
 _missing = [n for n in _required if n not in globals()]
 if _missing:
     raise NameError(
-        f"Missing names from Study_Area.ipynb: {_missing}. "
+        f"Missing names from 02_Study_Areas_Spatial_Splits_and_GEDI_Support.ipynb: {_missing}. "
         "Run the notebook through Section 7 first, then execute this cell."
     )
 
